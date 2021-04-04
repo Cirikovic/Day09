@@ -1,15 +1,18 @@
-function myForLoop1 () {
-    for (var evenNumbers = 0; evenNumbers <= 8; evenNumbers++)
-    return evenNumbers;
-    console.log(evenNumbers);
+function myForLoop1() {
+  for (var evenNumbers = 0; evenNumbers <= 8; evenNumbers+=2) {
+  console.log(evenNumbers);
+  }
 }
 
-function myForLoop2 (evenInvesNumbers) {
-    for (var evenInvesNumbers = 8; evenInvesNumbers >= 0; evenInvesNumbers--)
-    return evenInvesNumbers;
-    console.log(evenInvesNumbers);
+function myForLoop2() {
+  for (var evenInversNumbers = 8; evenInversNumbers >= 0; evenInversNumbers-=2) {
+  console.log(evenInversNumbers);
+  }
 }
+myForLoop1();
+myForLoop2();
+
 module.exports = {
-    myForLoop1,
-    myForLoop2
+  myForLoop1,
+  myForLoop2,
 };
